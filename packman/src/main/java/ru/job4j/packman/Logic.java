@@ -5,7 +5,6 @@ import ru.job4j.packman.firuges.Cell;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-
 public class Logic {
     private final ReentrantLock[][] board;
 

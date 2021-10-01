@@ -1,6 +1,5 @@
 package ru.job4j.tictactoe;
 
-
 public class Cell {
     private final int x;
     private final int y;
