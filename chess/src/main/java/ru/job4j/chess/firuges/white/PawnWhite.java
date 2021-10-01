@@ -3,7 +3,6 @@ package ru.job4j.chess.firuges.white;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
 
-
 public class PawnWhite implements Figure {
     private final Cell position;
 
