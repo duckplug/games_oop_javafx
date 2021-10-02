@@ -1,6 +1,7 @@
 package ru.job4j.chess.firuges.black;
 
 import org.junit.Test;
+import ru.job4j.chess.ImpossibleMoveException;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
 import static org.hamcrest.Matchers.is;
@@ -29,7 +30,7 @@ public class BishopBlackTest {
         assertThat(steps, is(bishopBlack.way(Cell.G5)));
     }
 
-    @Test
+    @Test(expected = ImpossibleMoveException.class)
     public void bishopBlackIsDiagonal() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         bishopBlack.way(Cell.G4);
